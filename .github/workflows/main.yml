@@ -10,7 +10,7 @@ jobs:
     - name: send custom message with args
       uses: ./
       with:
-        to: ${{ secrets.TELEGRAM_TO }}
+        to: 1234
         token: ${{ secrets.TELEGRAM_TOKEN }}
         args: The ${{ github.event_name }} event triggered first step.
 

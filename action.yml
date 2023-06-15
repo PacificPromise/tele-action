@@ -12,5 +12,5 @@ runs:
       shell: bash
     - run: |
         source src/health.sh
-        ${{ inputs.script }}
+        panda_health_check ${{ inputs.to }}
       shell: bash
