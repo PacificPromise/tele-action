@@ -1,10 +1,15 @@
 name: "Hello World"
 description: "Greet someone"
 inputs:
-  script:
-    description: "Script to run"
+  to:
+    description: "To"
     required: true
-    default: "panda_health_check"
+  token:
+    description: "Token"
+    required: true
+  arg:
+    description: "arg"
+    required: true
 runs:
   using: "composite"
   steps:
