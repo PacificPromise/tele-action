@@ -9,5 +9,5 @@ runs:
   steps:
     - run: |
         source src/notification.sh
-        send_telegram '${{ inputs.message }}'
+        send_telegram "${{ inputs.message }}"
       shell: bash
