@@ -7,23 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-    - name: send custom message with args
+
+    - name: send message using with
       uses: ./
       with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-         Hello anh em
-    # - name: send message using with
-    #   uses: ./
-    #   with:
-    #     to: ${{ secrets.TELEGRAM_TO }}
-    #     token: ${{ secrets.TELEGRAM_TOKEN }}
-    #     message: |
-    #       The ${{ github.event_name }} event triggered second step.
-    #       show the github variable ref: ${{ github.ref }}
-    #       show the github variable commit: ${{ github.sha }}
-    #       show the github variable ref: {{ commit.ref }}
-    #       show the github variable commit: {{ commit.sha }}
-    #       Commit Message: ${{ github.event.head_commit.message }}
+          The event triggered second step.
 
     # - name: send default message
     #   uses: ./
