@@ -12,6 +12,21 @@ Set environment variable in secrets of your repository as below:
 - TELEGRAM_TOPIC_ID: id of your topic's group (if your group have topic)
 - TELEGRAM_BOT_TOKEN: token of your telegram bot, visit [here](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) to know how to get telegram bot token
 
+|   Environment variable   |                    Description                      |         Example       |
+|--------------------------|-----------------------------------------------------|-----------------------|
+|   TELEGRAM_GROUP_ID      |  Id of your telegram group chat,                    |     -1001837632261    |
+|                          |  you can find a way to get a group                   |                       |      
+|                          |  chat id [here](https://stackoverflow.com/questions  |                       |
+|                          |  /32423837telegram-bot-                             |                       |
+|                          |  how-to-get-a-group-chat-id)                        |                       |
+|--------------------------|-----------------------------------------------------|-----------------------|
+|   TELEGRAM_TOPIC_ID      | Id of your topic's group (if your group have topic) |          196          |
+|--------------------------|-----------------------------------------------------|-----------------------|
+|   TELEGRAM_BOT_TOKEN     | Token of your telegram bot, visit [here]            |       xxxxxxxxx       |
+|                          | (https://www.siteguarding.com/en/                   |                       |
+|                          | how-to-get-telegram-bot-api-token)                  |                       |     
+|                          | to know how to get telegram bot token               |                       | 
+
 Send custom message:
 ```yml
 name: telegram message

@@ -2,7 +2,7 @@ name: "Telegram Action"
 description: "Actions for telegram"
 inputs:
   message:
-    description: "Message"
+    description: "Your message you want to send to telegram"
     required: true
 runs:
   using: "composite"
