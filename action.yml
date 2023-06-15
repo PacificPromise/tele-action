@@ -1,21 +1,15 @@
 name: "Hello World"
 description: "Greet someone"
 inputs:
-  to:
+  message:
     description: "To"
-    required: true
-  token:
-    description: "Token"
-    required: true
-  args:
-    description: "arg"
     required: true
 runs:
   using: "composite"
   steps:
-    - run: echo Hello Panda Script.
-      shell: bash
+    # - run: echo Hello Panda Script.
+    #   shell: bash
     - run: |
-        source src/health.sh
-        panda_health_check ${{ inputs.to }}
+        source src/notification.sh
+        send_telegram ${{ inputs.message }}
       shell: bash
