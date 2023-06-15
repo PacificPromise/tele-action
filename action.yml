@@ -11,6 +11,6 @@ runs:
     - run: echo Hello Panda Script.
       shell: bash
     - run: |
-        source index.sh
+        source test.sh
         ${{ inputs.script }}
       shell: bash
