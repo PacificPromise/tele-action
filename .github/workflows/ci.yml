@@ -10,7 +10,7 @@ jobs:
     - name: send custom message with args
       uses: ./
       with:
-        message: "Hello anh em"
+        message: "dasdasdsa"
     # - name: send message using with
     #   uses: ./
     #   with:

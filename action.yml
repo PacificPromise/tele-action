@@ -2,7 +2,7 @@ name: "Hello World"
 description: "Greet someone"
 inputs:
   message:
-    description: "To"
+    description: "Message"
     required: true
 runs:
   using: "composite"
