@@ -8,13 +8,11 @@ jobs:
     steps:
     - uses: actions/checkout@main
 
-    - name: send message using with
+    - name: send custom message with args
       uses: ./
       with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          The event triggered second step.
+          Hello anh em
 
     # - name: send default message
     #   uses: ./
