@@ -7,8 +7,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    # - run: echo Hello Panda Script.
-    #   shell: bash
     - run: |
         source src/notification.sh
         send_telegram '${{ inputs.message }}'
