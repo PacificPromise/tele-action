@@ -1,2 +1,5 @@
-# tele-action
-telegram github action for github ci
+# Telegram-action
+GitHub Action for sending a Telegram notification message. 
+---
+Note:
+- Please set environment variable in secrets of your repository.
