@@ -1,0 +1,13 @@
+name: "Telegram Action"
+description: "Actions for telegram"
+inputs:
+  message:
+    description: "Your message you want to send to telegram"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        source src/notification.sh
+        send_telegram "${{ inputs.message }}"
+      shell: bash

@@ -1,0 +1,20 @@
+name: telegram message
+
+on: [push]
+
+env:
+  TELEGRAM_GROUP_ID: ${{ secrets.TELEGRAM_GROUP_ID }}
+  TELEGRAM_TOPIC_ID: ${{ secrets.TELEGRAM_TOPIC_ID }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@main
+
+    - name: Send custom message
+      uses: ./
+      with:
+        message: Hello anh em \"
