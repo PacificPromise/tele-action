@@ -7,7 +7,7 @@ inputs:
   token:
     description: "Token"
     required: true
-  arg:
+  args:
     description: "arg"
     required: true
 runs:
